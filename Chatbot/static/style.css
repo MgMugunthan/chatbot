@@ -1,0 +1,112 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat container */
+#chat-container {
+    background-color: #fff; /* White chatbox */
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Box shadow */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Chat header */
+#chat-header {
+    background-color: #6a11cb; /* Purple header */
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Chatbox */
+#chatbox {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+/* Chat messages */
+#chatbox p {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+/* User messages */
+#chatbox p.user {
+    background-color: #d1e7ff; /* Light blue */
+    align-self: flex-end;
+    color: #084298;
+}
+
+/* Chatbot messages */
+#chatbox p.bot {
+    background-color: #ffeeba; /* Light yellow */
+    align-self: flex-start;
+    color: #856404;
+}
+
+/* Input container */
+#input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Input field */
+#userInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#userInput:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+/* Send button */
+#sendBtn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#sendBtn:hover {
+    background-color: #4e0eaf;
+}
+
+#sendBtn:active {
+    transform: scale(0.95);
+}
