@@ -4,7 +4,7 @@ import google.generativeai as ai
 app = Flask(__name__)
 
 # Configure the Google Generative AI API
-API_KEY = 'AIzaSyDtAvCV1kLdjS3BziGMyERLjvEb_c9ou6M'
+API_KEY = ''#your API key
 ai.configure(api_key=API_KEY)
 model = ai.GenerativeModel("gemini-1.5-flash")
 chat = model.start_chat()
